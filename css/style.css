@@ -1,0 +1,106 @@
+.img-full-width {
+    width: 100%;
+    height: auto;
+}
+
+.caption {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, .8);
+    font-weight: 700;
+}
+
+/* Adjust the color and size of the "OUT OF STOCK" text */
+.caption h3 {
+    color: #4E7266; /* Change color as needed */
+    font-size: 30px; /* Change size as needed */
+    padding: 3px;
+}
+
+.btn-order {
+    background-color: #ffffff;
+    color: #4E7266;
+}
+
+.btn-order:hover {
+    background-color: #4E7266;
+    color: #ffffff;
+}
+
+.btn-order {
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/* @media (max-width: 768px) {
+    .card {
+        max-width: 100%;
+    }
+} */
+
+.vas {
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+.bottom-img,
+.bi-check-lg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease;
+}
+
+.bottom-img:hover,
+.bi-check-lg:hover {
+    opacity: 0.5;
+}
+
+.bi-check-lg {
+    opacity: 1;
+    z-index: -1;
+    margin-top: 10px;
+    transform: translateY(-25%);
+}
+
+.vas:hover .bi-check-lg {
+    z-index: 2; 
+    opacity: 2; 
+} 
+
+
+/* Tablet mode responsiveness */
+@media (max-width: 991.98px) {
+    .vas {
+        width: 60px;
+        height: 60px;
+    }
+
+    .bottom-img,
+    .bi-check-lg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .bi-check-lg {
+        font-size: 20px;
+        margin-top: 5px;
+        transform: translateY(-25%);
+    }
+}
+
+.btn {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
